@@ -40,7 +40,9 @@ class TestNeuralNetworkDecisionTree(unittest.TestCase):
                                [2, 3],
                                [1, 4]]).astype(np.float32)
         sess = tf.InteractiveSession()
-        res = nn_decision_tree(tf.constant(x), [tf.constant(i) for i in cut_points_list], leaf_score).eval()
+        res = nn_decision_tree(tf.constant(x),
+                               [tf.constant(i) for i in cut_points_list],
+                               tf.constant(leaf_score)).eval()
         exp = np.array([[4, 1],
                         [1, 4],
                         [3, 2],
