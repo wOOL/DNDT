@@ -14,6 +14,7 @@ def tf_bin(x, cut_points, temperature=10):
     # cut_points is a D-dim vector (D is the number of cut-points)
     # this function produces a N-by-(D+1) matrix, each row has only one element being one and the rest are all zeros
     D = cut_points.get_shape().as_list()[0]
+    cut_points = -tf.nn.top_k(-cut_points, D)[0] # make sure cut_points is monotonically increasing
     W = tf.reshape(tf.linspace(1.0, D + 1.0, D + 1), [1, -1])
     b = tf.cumsum(tf.concat(0, [tf.constant(0.0, shape=[1]), -cut_points]))
     h = tf.matmul(x, W) + b
