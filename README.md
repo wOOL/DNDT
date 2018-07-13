@@ -6,4 +6,4 @@ Yongxin Yang, Irene Garcia Morillo, Timothy M. Hospedales
 
 ICML Workshop on Human Interpretability in Machine Learning (WHI 2018)
 
-Paper link: https://arxiv.org/pdf/1806.06988.pdf
+https://arxiv.org/pdf/1806.06988.pdf
