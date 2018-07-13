@@ -1,4 +1,9 @@
-# NNDS
-Decision Tree by Neural Network
+# Implementation of DNDT (TensorFlow and PyTorch)
 
-Just a toy project about implementing decision tree models using a certain neural network architecture.
+Deep Neural Decision Trees
+
+Yongxin Yang, Irene Garcia Morillo, Timothy M. Hospedales
+
+ICML Workshop on Human Interpretability in Machine Learning (WHI 2018)
+
+Paper link: https://arxiv.org/pdf/1806.06988.pdf
